@@ -94,6 +94,35 @@
     width: 30px;
     height: 30px;
 }
+/* Carousel  */
+.carousel-container {
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  border-radius: 20px;
+  border: 3px solid #d4af37;
+  max-width: 80%;
+  margin: auto;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: #d4af37;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.carousel-item {
+  text-align: center;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 40px 0;
+}
+.hint {
+  margin-top: 20px;
+  color: #d4af37;
+  font-size: 20px;
+  text-align: center;
+}
 
   
  
