@@ -124,5 +124,25 @@
   text-align: center;
 }
 
-  
+.video_trailer {
+  text-align: center;
+  max-width: 100%;
+  height: auto;
+}
+
+.encabezado_trailer {
+   margin-bottom: 5rem;
+}
+
+.vector_logo {
+  margin-bottom: 5rem;
+}
+
+.play_game{
+  display: flex;
+  justify-content: center;
+  align-items: last baseline;
+  font-size: 40px;
+  color: white;
  
+}
