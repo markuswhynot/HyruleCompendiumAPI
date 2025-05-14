@@ -1,5 +1,12 @@
+@font-face {
+  font-family: 'Hylian';
+  src: url('../fonts/HyliaSerifBeta-Regular.otf') format('truetype'); /* Adjust path if needed */
+  font-weight: normal;
+  font-style: normal;
+}
 :root{
   --TextBody: 'Kufam';
+  --textTitle: 'Hylian'
 }
 * {
     margin: 0;
@@ -8,6 +15,10 @@
   }
   h4, h5, h3, a{
   font-family: var(--TextBody);
+  }
+  h1{
+    font-family: var(--textTitle);
+    font-size: 5vw;
   }
   
   html, body {
@@ -89,10 +100,7 @@
 
 }
 .navbar-toggler-icon {
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 198, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 /* Carousel  */
 .carousel-container {
@@ -124,6 +132,7 @@
   text-align: center;
 }
 
+
 .video_trailer {
   text-align: center;
   max-width: 100%;
@@ -146,3 +155,107 @@
   color: white;
  
 }
+
+/* API CSS --------------------------------------------------------------------------------------------*/
+.card-creature > h4 {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.card-creature > img {
+  border-radius: 30px;
+}
+
+.card-creature > img:hover{
+  box-shadow: 0 0 10px 4px rgba(0, 198, 255, 0.6);
+  transition: 0.2s;
+}
+
+.test{
+  height: auto;
+  width: 900px;
+  z-index: 1000;
+  box-shadow: 0 0 10px 4px rgba(0, 198, 255, 0.6);
+}
+
+.img_descrip-cont{flex-direction: row;}
+
+.loot-cont{width: 800px; height: 95px;}
+
+/* Custom Scrollbar for Webkit browsers (Chrome, Edge, Safari) */
+.scroll-box::-webkit-scrollbar {
+scrollbar-width: thin;
+}
+
+.scroll-box::-webkit-scrollbar-track {
+background: rgba(0, 0, 0, 0.2); /* Dark semi-transparent track */
+border-radius: 10px;
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+background: linear-gradient(180deg, #00c6ff, #0072ff); /* Zelda blue gradient */
+border-radius: 10px;
+border: 2px solid #ffffff33; /* Soft white border around thumb */
+transition: all 0.3s ease;
+}
+
+/* .scroll-box::-webkit-scrollbar-thumb:hover {
+background: linear-gradient(180deg, #7ed6df, #22a6b3); 
+box-shadow: 0 0 10px 4px rgba(0, 198, 255, 0.6); 
+} */
+
+#cardFloat{
+  display: none;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none; /* Hidden by default */
+  z-index: 900; /* Below the fixedContainer */
+}
+
+/* END API CSS ------------------------------------------------------------------------------------------------------------ */
+
+
+@media (max-width: 960px) {
+  .test{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img_descrip-cont{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .loot-cont{
+    width: 300px;
+    height: 85px;
+  }
+
+  .test img{
+    width: 100%;
+    align-self: center;
+  }
+}
+
+@media (max-width: 460px){
+  .test{
+    width: 250px;
+  }
+  .loot-cont{
+    width: 150px;
+  }
+
+  #C-buttons img{
+    width: 100%;
+    height: auto;
+  }
+}
+ 
