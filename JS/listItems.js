@@ -74,9 +74,20 @@ $(document).ready(function() {
         $("#cardFloat").empty();
 
         let lootItems = "";
-        if (cardDetails.drops == null || cardDetails.drops.length == 0) {
-            lootItems = "<h5>None</h5>";
+        let lootNameTitle = "";
+        if (!cardDetails.drops || cardDetails.drops.length === 0) {
+            // If there are no drops
+            if (cardDetails.edible && cardDetails.cooking_effect && cardDetails.cooking_effect !== "none") {
+                // Show cooking effect if edible and has a cooking effect
+                lootNameTitle = `Cooking Effects`
+                lootItems = `<h5 class="col text-capitalize">${cardDetails.cooking_effect}</h5>`;
+            } else {
+                lootNameTitle = `Droppables`
+                lootItems = "<h5>None</h5>";
+            }
         } else {
+            // If it has drops
+            lootNameTitle = `Loot`
             cardDetails.drops.forEach(drop => {
                 lootItems += `<h5 class="col text-capitalize">${drop}</h5>`;
             });
@@ -85,7 +96,7 @@ $(document).ready(function() {
         let cardHTML = `<div class="d-flex flex-column align-items-center border border-3 border-info p-4 rounded-4 text-info gap-4">
                 <div class="d-flex flex-row justify-content-center align-items-center gap-4">
                     <div class="d-flex flex-column gap-2">
-                        <div class="d-flex flex-row justify-content-between ">
+                        <div class="d-flex flex-row justify-content-between gap-4 ">
                             <h4>${cardDetails.id}</h4>
                             <h4 class="text-capitalize">${cardDetails.name}</h4>
                         </div>
@@ -99,7 +110,7 @@ $(document).ready(function() {
                     </div>
                 </div>
                 <div class="d-flex flex-column gap-2 justify-content-center align-items-center">
-                    <h4 class="border-bottom border-info border-3 justify-self-center" style="width: 100%;">Loot</h4>
+                    <h4 class="border-bottom border-info border-3 justify-self-center" style="width: 100%;">${lootNameTitle}</h4>
                     <div class="scroll-box overflow-auto p-3" style="height: 95px; width: 800px;">
                         <div class="container row justify-content-center">
                             ${lootItems}
