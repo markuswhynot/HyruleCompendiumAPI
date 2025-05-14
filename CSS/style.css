@@ -20,6 +20,11 @@
     font-family: var(--textTitle);
     font-size: 5vw;
   }
+
+  h2{
+    font-family: var(--textTitle);
+    font-size: 5vw;
+  }
   
   html, body {
     height: 100%;
