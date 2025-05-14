@@ -53,13 +53,14 @@ $(document).ready(function() {
             
         });
         
+        
 
 
     //Función que renderiza los datos de los Items
     function renderItemCard(itemDetails){
             let itemHTML = `
        
-            <div id="${itemDetails.id }" class="card-creature col d-flex flex-column align-items-center">
+            <div id="${itemDetails.id }" class="card-creature col d-flex flex-column align-items-center ${itemDetails.category}">
                     <img src="${itemDetails.image}" class="border border-3 border-info p-2" alt="...">
                     <h4 class="text-info text-capitalize">${itemDetails.name}</h4>
             </div>

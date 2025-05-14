@@ -1,5 +1,12 @@
+@font-face {
+  font-family: 'Hylian';
+  src: url('../fonts/HyliaSerifBeta-Regular.otf') format('truetype'); /* Adjust path if needed */
+  font-weight: normal;
+  font-style: normal;
+}
 :root{
   --TextBody: 'Kufam';
+  --textTitle: 'Hylian'
 }
 * {
     margin: 0;
@@ -8,6 +15,10 @@
   }
   h4, h5, h3, a{
   font-family: var(--TextBody);
+  }
+  h1{
+    font-family: var(--textTitle);
+    font-size: 5vw;
   }
   
   html, body {
@@ -89,10 +100,7 @@
 
 }
 .navbar-toggler-icon {
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 198, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 /* Carousel  */
 .carousel-container {
