@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HYRULECOMPENDIUMAPI</title>
-    <link href="media/ShekaiEye.ico" rel="icon" type="image/x-icon">
+    <link href="media/img/Ojo.webp" rel="icon" type="image/x-icon">
 
     <link rel="stylesheet" href="CSS/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -28,10 +28,10 @@
         <div class="collapse navbar-collapse" id="navbarContent">
             <ul class="navbar-nav ms-5 mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">API</a>
+                    <a class="nav-link" href="API.html">API</a>
                 </li>
             </ul>
         </div>
@@ -54,55 +54,58 @@
   <!-- Carousel  -->
   <h2 class="encabezado">Discover Hyrule's secrets!</h2>
   <div class="carousel-container">
-    <div id="hyruleCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div>1</div>
-                <img src="media/img/nationalgeographic_1468962.jpg" class="d-block w-100" alt="Imagen 1">
+        <div id="hyruleCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://cdn.wccftech.com/wp-content/uploads/2016/12/The-Legend-Of-Zelda-Breath-Of-The-Wild-screens.jpg" class="d-block w-100" alt="Imagen 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.gameuidatabase.com/uploads/TheLegendofZelda_BreathoftheWild04232020-111209.jpg" class="d-block w-100" alt="Imagen 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.gameuidatabase.com/uploads/TheLegendofZelda_BreathoftheWild04232020-110204.jpg" class="d-block w-100" alt="Imagen 3">
+                </div>
             </div>
-            <div class="carousel-item">
-                <div>2</div>
-                <img src="media/img/nationalgeographic_1468962.jpg" class="d-block w-100" alt="Imagen 2">
-            </div>
-            <div class="carousel-item">
-                <div>3</div>
-                <img src="media/img/nationalgeographic_1468962.jpg" class="d-block w-100" alt="Imagen 3">
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#hyruleCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#hyruleCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#hyruleCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#hyruleCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+        <div class="hint">_ _ _</div>
     </div>
-    <div class="hint">_ _ _</div>
-</div>
 
 
-        <section>
-
-            <h2 class="encabezado_trailer"></h2>
+    <section>
+        
+        <div class="play_game">
             
-             <div class="play_game">
-                <p>Play the Game</p>
-             </div>
+        </div>
 
-                  <div class="vector_logo">
-                    <img src="media/img/Vector.png" alt="vector_logo">
-                  </div>
+        <div class="vector_logo d-flex flex-row gap-4 align-items-center">
+            <img src="media/img/Vector.png" alt="vector_logo">
+            <h1>Play the Game</h1>
+        </div>
 
-                          <div class="video_trailer">
+        <div class="d-flex justify-content-center align-items-center ">
 
-                              <iframe width="560" height="315" src="https://www.youtube.com/embed/IPPVK1m2yEM?si=2c9iN2u0ZU__WQL5" 
-                              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="ratio ratio-16x9 " style="width: 80vw;">
+                <iframe 
+                  src="https://www.youtube.com/embed/zw47_q9wbBE?si=KjOFn3EqURihXk_p"
+                  title="YouTube video player"
+                  allowfullscreen 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+              </div>
 
-                          </div> 
+        </div> 
+        
 
-        </section>
+    </section>
 
 </body>
 </html>
