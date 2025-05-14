@@ -124,5 +124,64 @@
   text-align: center;
 }
 
-  
+/* API CSS --------------------------------------------------------------------------------------------*/
+.card-creature > h4 {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.card-creature > img {
+  border-radius: 30px;
+}
+
+.card-creature > img:hover{
+  box-shadow: 0 0 10px 4px rgba(0, 198, 255, 0.6);
+  transition: 0.2s;
+}
+
+.test{
+  height: auto;
+  width: 900px;
+  z-index: 1000;
+  box-shadow: 0 0 10px 4px rgba(0, 198, 255, 0.6);
+}
+
+/* Custom Scrollbar for Webkit browsers (Chrome, Edge, Safari) */
+.scroll-box::-webkit-scrollbar {
+scrollbar-width: thin;
+}
+
+.scroll-box::-webkit-scrollbar-track {
+background: rgba(0, 0, 0, 0.2); /* Dark semi-transparent track */
+border-radius: 10px;
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+background: linear-gradient(180deg, #00c6ff, #0072ff); /* Zelda blue gradient */
+border-radius: 10px;
+border: 2px solid #ffffff33; /* Soft white border around thumb */
+transition: all 0.3s ease;
+}
+
+/* .scroll-box::-webkit-scrollbar-thumb:hover {
+background: linear-gradient(180deg, #7ed6df, #22a6b3); 
+box-shadow: 0 0 10px 4px rgba(0, 198, 255, 0.6); 
+} */
+
+#cardFloat{
+  display: none;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none; /* Hidden by default */
+  z-index: 900; /* Below the fixedContainer */
+}
+
+/* END API CSS ------------------------------------------------------------------------------------------------------------ */
  
