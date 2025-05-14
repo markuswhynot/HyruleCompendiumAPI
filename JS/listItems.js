@@ -94,7 +94,7 @@ $(document).ready(function() {
         }
 
         let cardHTML = `<div class="d-flex flex-column align-items-center border border-3 border-info p-4 rounded-4 text-info gap-4">
-                <div class="d-flex flex-row justify-content-center align-items-center gap-4">
+                <div class=" img_descrip-cont d-flex justify-content-center align-items-center gap-4">
                     <div class="d-flex flex-column gap-2">
                         <div class="d-flex flex-row justify-content-between gap-4 ">
                             <h4>${cardDetails.id}</h4>
@@ -111,7 +111,7 @@ $(document).ready(function() {
                 </div>
                 <div class="d-flex flex-column gap-2 justify-content-center align-items-center">
                     <h4 class="border-bottom border-info border-3 justify-self-center" style="width: 100%;">${lootNameTitle}</h4>
-                    <div class="scroll-box overflow-auto p-3" style="height: 95px; width: 800px;">
+                    <div class="loot-cont scroll-box overflow-auto p-3">
                         <div class="container row justify-content-center">
                             ${lootItems}
                         

@@ -146,6 +146,10 @@
   box-shadow: 0 0 10px 4px rgba(0, 198, 255, 0.6);
 }
 
+.img_descrip-cont{flex-direction: row;}
+
+.loot-cont{width: 800px; height: 95px;}
+
 /* Custom Scrollbar for Webkit browsers (Chrome, Edge, Safari) */
 .scroll-box::-webkit-scrollbar {
 scrollbar-width: thin;
@@ -184,4 +188,42 @@ box-shadow: 0 0 10px 4px rgba(0, 198, 255, 0.6);
 }
 
 /* END API CSS ------------------------------------------------------------------------------------------------------------ */
+
+
+@media (max-width: 960px) {
+  .test{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img_descrip-cont{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .loot-cont{
+    width: 300px;
+    height: 85px;
+  }
+
+  .test img{
+    width: 100%;
+    align-self: center;
+  }
+}
+
+@media (max-width: 460px){
+  .test{
+    width: 250px;
+  }
+  .loot-cont{
+    width: 150px;
+  }
+
+  #C-buttons img{
+    width: 100%;
+    height: auto;
+  }
+}
  
